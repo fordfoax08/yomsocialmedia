@@ -1,0 +1,4 @@
+after 1week of abandoning lol.
+-9 2 2020
+#Index, view profile of selected user in INDEX, redirect to profile.php
+using GET to pass account_id to profile.php

@@ -1,0 +1,26 @@
+LOGIN
+-hashing Password
+-getting email and validate if exist
+
+
+REGISTER
+-getting SESSION AND ID GET
+-Create new table instance, to user_account, account details, Password, meail 	fname lname etc.
+-making Account and Session ID and redirect it to cont-reg for further 	information including image
+
+REG-CONT
+-continuation of user information gathering, this module will accept input from user.
+-user cannot view their profile if this step is skipped.
+-after sign-up link will redirect to reg-cont page, or if when user, did not 
+	filled up this page, they will be redirected here when browsing to 	profile, (must be logged in).
+
+PROFILE
+-profile are pre required with sessions, session id and account id, before using and viewing the page, if not it will redirect to login.
+-profile also let user view their posts
+-user can only create new post in PROFILE Page.
+
+INDEX
+-index requires Session and Account ID in session, otherwise, it will redirect 	to login
+-index is where all user's post' can be viewed.
+-every post has function of likes and comments.
+

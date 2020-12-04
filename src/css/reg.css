@@ -1,0 +1,140 @@
+*{
+  margin: 0;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html,body{
+  height: 94%;
+}
+body{
+  background-color: rgb(189, 204, 255);
+  
+}
+
+header{
+  height: 70px;
+  background-color: rgb(0, 5, 36);
+}
+
+
+
+.container1{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.sign-container{
+  width: 50%;
+  /* height: 380px; */
+  background-color: white;
+  overflow: hidden;
+  border-radius: 5px 40% 5px 5px;
+}
+.banner1{
+  height: 55px;
+  cursor: pointer;
+  background: linear-gradient(rgb(4, 11, 54) 45%,rgb(0, 5, 36) 50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 2.2em;
+}
+.form1{
+  padding: 5px;
+  position: relative;
+  overflow-x: scroll;
+  margin-top: 20px;
+  height: 270px;
+  display: flex;
+  overflow: hidden;
+}.form1.close{
+  height: 0px;
+  transition: .5s all ease-in-out;
+}
+.f-1{
+  height: 100%;
+  width: 100%;
+}
+
+.u-name,.u-dob{
+  padding: 5px;
+  display: flex;
+}
+.u-name input[type=text]{
+  width: 44%;
+  margin: 0 5px; 
+  padding: 5px;
+  border: none;
+  border-bottom: 2px solid #aaa;
+  background-color: rgb(248, 248, 248);
+  font-weight: bold;
+}
+.u-name input[type=text]::placeholder{
+  color: rgb(95, 95, 95);
+}
+
+.u-dob select{
+  width: 15%;
+  padding: 5px;
+  margin: 0 3px;
+  background-color: rgb(248, 248, 248);
+  border: none;
+  border-bottom: 2px solid #aaa;
+}
+
+.u-login{
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+}
+.u-login input{
+  margin: 5px 0;
+  padding: 5px;
+  background-color: rgb(248, 248, 248);
+  border: none;
+  border-bottom: 2px solid #aaa;
+  width: 90%;
+  font-weight: bold;
+}
+.u-login input::placeholder{
+  color: rgb(90, 90, 90);
+}
+
+.u-submit{
+  text-align: right;
+}
+.u-submit input[type=button]{
+  padding: 15px;
+  margin-right: 10%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  color: white;
+  border: none;
+  background-color: rgb(84, 216, 84);
+  border-radius: 10px;
+  box-shadow: 1px 1px 2px 0px black;
+  cursor: pointer;
+}
+.u-submit input[type=button]:hover{
+  background-image: linear-gradient(rgb(103, 221, 103) 45%,rgb(84, 216, 84) 50%);
+  box-shadow: 2px 2px 4px 0px black;
+}
+#LOGIN{
+  /* margin-right: 5%; */
+  float: left;
+  margin-top: 10px;
+  margin-left: 5%;
+}
+
+
+
+
+
+@media(max-width: 500px){
+  .sign-container{
+    width: 70%;}
+}

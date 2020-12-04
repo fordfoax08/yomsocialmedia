@@ -1,0 +1,155 @@
+*{
+  margin: 0;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html,body{
+  height: 94%;
+}
+body{
+  background-color: rgb(189, 204, 255);
+  
+}
+
+header{
+  height: 70px;
+  background-color: rgb(0, 5, 36);
+}
+
+
+
+.container1{
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+.form-container{
+  width: 55%;
+  background-color: white;
+  box-shadow: 0px 0px 7px 0px black;
+  z-index: 4;
+  margin-top: -20px;
+  border-radius: 10px;
+}
+
+.profile-img{
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  background-color:  rgb(77, 88, 255);
+  border-radius: 10px 10px 0px 0px;
+}
+.samp{
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid gray;
+  height: 200px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#profile-image{
+  border: 2px solid gray;
+  /* border-radius: 50%; */
+}
+.upload-img{
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.upload-img input{
+  position: absolute;
+  z-index: 5;
+}
+.user-title{
+  background-color:  rgb(77, 88, 255);
+  padding-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+#user_title{
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.user-contacts,
+.user-bio,
+.user-hobbies,
+.user-skills{
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20%;
+  position: relative;
+}
+.user-contacts{background-color: rgba(50, 138, 146, 0.479);}
+.user-bio{background-color: rgba(248, 195, 19, 0.726);}
+.user-hobbies{background-color: rgba(92, 124, 29, 0.753);}
+.user-skills{background-color: rgba(170, 49, 28, 0.747);}
+.user-contacts input{
+  padding: 5px;
+  margin: 3px 0;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+.user-bio textarea{
+  padding: 5px;
+  resize: none;
+  height: 100px;
+  font-size: 1.2em;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+.add-hobbies,
+.add-skills{
+  display: flex;
+  align-items: center;
+}
+.usrhb,
+.usrsk{
+  padding: 5px;
+  margin: 3px 0;
+  border-radius: 5px;
+  border: 1px solid gray;
+  width: 100%;
+  transform: scale(.005);
+}.usrsk.anim,
+.usrhb.anim{
+  transform: scale(1.0);
+  transition: .5s all ease-in-out;
+}
+#addHobby,
+#addSkills{
+  padding: 5px;
+  width: 60px;
+  border-radius: 5px;
+  border: 1px solid gray;
+  cursor: pointer;
+}
+
+.upload-submit{
+  display: flex;
+  justify-content: center;
+  background: transparent;
+  border-radius: 10px;
+}
+#submit-btn{
+  padding: 30px 10px;
+  width: 100%;
+  border: none;
+  border: 1px solid #aaa;
+  border-radius: 10px;
+  background-color: rgb(0, 5, 36);
+  color: white;
+  background-image: linear-gradient(rgb(2, 10, 65) 45%,rgb(0, 5, 36) 50%);
+}#submit-btn:hover{
+  background-image: linear-gradient(rgb(1, 8, 53) 45%,rgb(2, 10, 65) 50%);
+}
+
+
+
+@media(max-width: 500px){
+  .sign-container{
+    width: 70%;}
+}

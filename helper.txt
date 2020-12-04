@@ -1,0 +1,92 @@
+reg_cont
+#GET for inner joining
+account_id
+session_id
+
+
+u_id
+s_id
+
+
+
+#before inserting data into db, array value should be converted into json
+
+
+
+
+#user_comment
+id
+comment_id
+user_id
+session_id
+comment_user
+comment_title
+comment_body
+comment_comments #includes user,comment,date
+comment_likes	#array user comment id
+comment_date 	#type DATETIME
+
+
+#Insert comments
+
+UPDATE `user_comment` SET `comment_image` = '4851596964092.jpg' WHERE `user_comment`.`id` = 1;
+
+
+Monday August 10, tomm
+
+Profile
+-add edited (date of edit)
+
+
+
+#INDEX reply
+>> query use_comment_id
+
+SELECT itemTable1, itemTable2
+FROM table1,
+INNER JOIN table2 WHERE table1.id = 1 AND table2.id = 1;
+
+SELECT user_account.account_id, user_account.f_name,
+user_account.l_name, user_account.user_comment_id,
+user_profile.user_image, user_profile.user_title
+FROM user_account
+INNER JOIN user_profile
+ON user_account.account_id = user_account.account_id
+WHERE user_account.account_id LIKE '1596809274724';
+
+
+SELECT * FROM user_account
+INNER JOIN user_profile
+ON user_account.account_id = user_profile.account_id
+WHERE user_account.account_id = '1596809274724' AND user_profile.account_id = '1596809274724';
+
+
+
+SELECT * FROM user_account
+INNER JOIN user_profile
+ON user_account.account_id = user_profile.account_id
+WHERE user_account.user_comment_id = 'YD4071';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
